@@ -89,7 +89,8 @@
     "*://www.gqueues.com/*",
     "*://app.codeable.io/*",
     "*://www.assembla.com/*",
-    "*://*.salesforce.com/*"
+    "*://*.salesforce.com/*",
+    "*://jira.9yrds.net/*"
   ],
   "content_scripts": [
     {
@@ -152,7 +153,8 @@
         "*://app.codeable.io/*",
         "*://waffle.io/*",
         "*://www.assembla.com/*",
-        "*://*.salesforce.com/*"
+        "*://*.salesforce.com/*",
+        "*://jira.9yrds.net/*"
       ],
       "css": ["styles/style.css"],
       "js": ["scripts/common.js"]
@@ -376,6 +378,10 @@
     {
       "matches": ["*://*.salesforce.com/*"],
       "js": ["scripts/content/salesforce.js"]
+    },
+    {
+      "matches": ["*://jira.9yrds.net/*"],
+      "js": ["scripts/content/jira.js"]
     }
   ]
 }
